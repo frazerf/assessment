@@ -1,0 +1,13 @@
+/* Base Styles
+------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"); // Importing Raleway from google web fonts
+
+:root {
+  font-size: 62.5%; // So I can use rem's instead of px values
+  body {
+    margin: 0;
+    font-size: 1.6rem; // 1.6rem = 16px
+    font-family: $primary-font; // Make Raleway the default font sitewide
+  }
+}

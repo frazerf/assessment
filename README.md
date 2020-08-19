@@ -27,7 +27,7 @@ If you were to add an explicit height to the first `<div>` of 100px, it would gi
 
 Nowadays we use the “box-sizing: border-box” declaration on all elements so we can set the explicit width and height of our element from the border down to the content. This means we don’t have to do any math to account for padding and borders of an element.
 
-## JS excercise
+## JS exercise
 
 ---
 
@@ -72,3 +72,21 @@ console.log(result);
 ```
 
 I used the find method to find an object in my array of objects which had an id equal to 'j_456' and assigned it to the result constant.
+
+## Replicate layout exercise
+
+---
+
+To view my layout exercise, clone/download this repo and open **index.html**.
+
+My approach to building the layout was relatively straightforward. My first step was to set up the project and add SCSS via npm and then add my directories for my compiled CSS and images.
+Once the setup had been completed, I planned out the structure of my layout and added the HTML5 elements to the page. As it was a fairly simple layout, I didn't want to overcomplicate it by adding a bootstrap grid (or something similar) so I settled on a simple flexbox grid to position the elements according to the example. For the responsive layout I used a single breakpoint of 768px and simply stacked the content and sidebar elements in mobile.
+
+I then set up my base styles (variables, fonts and typography, etc.) and got started building my components. I wanted to build as modular as possible to give every component the ability to be used elsewhere on the site. I created a search component to house the search box and then created an icon component, with a magnifying modifier, just incase we wanted to use more icons on the site in the future.
+I tossed up whether to add the header styles in to layout.scss because it was such a simple layout but turned it in to a component in the end.
+
+In terms of CSS methodology I went with BEM and I kept the interactivity to a minimum, just adding a hover transition on the search button. I wrote semantic HTML and added focus and active states to help with accessibility.
+
+I kept the design reasonably simple using an accessible primary and secondary colour that passed AA standard contrast ratios and added a google webfont to lift the content.
+
+Lastly, I tested in all modern browsers that were available to me (chrome, firefox, safari, edge) as well as devices (iPhone). Normally I’d use browserstack for testing purposes.

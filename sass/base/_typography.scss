@@ -1,0 +1,36 @@
+/* Typography Styles
+------------------ 
+I've set my typography up like this for for styling reasons, 
+especially when you don't have total control over your markup. 
+A common problem I had when dealing with drupal. 
+*/
+
+.h1 {
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.p {
+  line-height: 2.5rem;
+}
+
+h1 {
+  @extend .h1;
+}
+
+h2 {
+  @extend .h2;
+}
+
+p {
+  @extend .p;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-weight: 600;
+}

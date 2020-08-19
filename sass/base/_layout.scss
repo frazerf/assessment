@@ -1,0 +1,27 @@
+/* Layout Styles
+------------------
+A simple flexbox grid structure with one responsive 
+breakpoint for larger devices. Stacks for smaller screens.
+*/
+
+section {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    min-height: calc(
+      100vh - 7.1rem
+    ); // Normally I would let the content govern the height of the element but for this example I've set the min-height to be 100% of the veiwport and minused the header height.
+  }
+  article {
+    padding: $default-padding;
+    @media only screen and (min-width: 768px) {
+      width: 70%;
+    }
+  }
+  aside {
+    padding: $default-padding;
+    background: $secondary-colour;
+    @media only screen and (min-width: 768px) {
+      width: 30%;
+    }
+  }
+}

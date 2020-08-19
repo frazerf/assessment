@@ -1,0 +1,28 @@
+/* Search Styles
+------------------*/
+
+.search {
+  display: flex;
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    color: $black;
+    border: none;
+    &:focus {
+      outline: 2px solid $focus-colour; // Add outline on focus
+    }
+  }
+  &__button {
+    width: 6rem;
+    background: $secondary-colour;
+    transition: all ease-in-out $transition-time; // CSS transition when you hover over search input
+    border: none;
+    &:hover {
+      background: lighten($secondary-colour, 7%); // Lighten the button by 7%
+    }
+    &:focus,
+    &:active {
+      outline: 2px solid $focus-colour; // Add outline on focus and active states
+    }
+  }
+}

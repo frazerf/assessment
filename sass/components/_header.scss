@@ -1,0 +1,14 @@
+/* Header Styles
+------------------
+I probably could have put this in layout.scss but I 
+thought I'd break it out in to it's own component.
+*/
+
+header {
+  background: $primary-colour;
+  display: flex;
+  align-items: center; // Center content vertically within the header
+  justify-content: space-between; // Make sure logo and search box are at opposite ends
+  padding: $default-padding;
+  color: $white;
+}

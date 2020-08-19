@@ -1,0 +1,15 @@
+/* Icon Styles
+------------------*/
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  &--magnify {
+    // Modifier in case we want other icons types
+    background-image: url(../images/magnify.png);
+  }
+}

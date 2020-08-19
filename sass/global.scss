@@ -1,0 +1,13 @@
+/* Base Styles
+------------------*/
+@import "base/_normalize.scss";
+@import "base/_vars.scss";
+@import "base/_base.scss";
+@import "base/_typography.scss";
+@import "base/_layout.scss";
+
+/* Component Styles
+------------------*/
+@import "components/_header.scss";
+@import "components/_search.scss";
+@import "components/_icon.scss";
